@@ -13,15 +13,15 @@ const projects = (await getCollection('work')).sort(
 
 <Layout
 	title="My Work | Angela Jasso"
-	description="Learn about Angela Jasso's most recent projects"
->
+	description="Learn about Angela Jasso's most recent projects">
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="My Work"
-				tagline="See my most recent projects below to get an idea of my experience."
 				align="start"
 			/>
+			<p>"Once upon a time, someone heard about blockchain, a revolutionary technology with promising opportunities. Intrigued, they became a Blockchain Developer.</p>
+			<p>They embarked on a learning journey, starting with logic programming and creating projects to apply what they learned...</p>
 			<Grid variant="offset">
 				{
 					projects.map((project) => (
@@ -31,6 +31,13 @@ const projects = (await getCollection('work')).sort(
 					))
 				}
 			</Grid>
+			<p>They proved that anyone can master technology and use it to make the world a better place."</p>
 		</main>
 	</div>
 </Layout>
+
+<style>
+	p {
+		font-size: 1.5rem;
+	}
+</style>
